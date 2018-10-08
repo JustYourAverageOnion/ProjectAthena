@@ -15,8 +15,8 @@ A compilation of simple chess algorithms :)
             - To view : [link](https://justyouraverageonion.github.io/ProjectAthena/nt-bactrack.html)
         - [ ] *Warnsdorff's Algorithm* [link](https://www.geeksforgeeks.org/warnsdorffs-algorithm-knights-tour-problem/)
             - There are 2 rules according to this algorithm
-                - Start from anywhere in the chess board
-                - Start moving to an adjacent, unvisited square with minimum number of unvisited adjacent.
+                - The knight is moved so that it always proceeds to the square from which the knight will have the fewest onward moves.
+                - When calculating the number of onward moves for each candidate square, we do not count moves that revisit any square already visited.
             - To view : [link](https://justyouraverageonion.github.io/ProjectAthena/nt-warnsdorff.html)
         - [ ] *Divide and Conquer Algorithm* [link](https://www.youtube.com/watch?v=9fSFC00ZKPg)
             - Divide the board into 4 quadrants with 4 diamonds.
