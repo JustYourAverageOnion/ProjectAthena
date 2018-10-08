@@ -1,4 +1,4 @@
-# Project Athena
+# ProjectAthena
 A compilation of simple chess algorithms :)
 
 ## Algorithmic solutions for different chess problems
