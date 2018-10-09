@@ -173,7 +173,7 @@
             </div>
             <div id="knight">&#9822;</div>
         </div>
-        <p id="help">Pick any cell as a starting point</p>
+        <p id="help">Click the first cell :)</p>
         <span id="reset">Reset</span>
     </div>
     <script>
@@ -214,19 +214,21 @@
         // Cell Event Listener
         function addCellEventListener() {
             console.log("addCellEventListener");
-            console.log(cells.length);
+            // console.log(cells.length);
+            cells[0].addEventListener("click", handleClick);
             for (let i = 0; i < cells.length; i++) {
-                cells[i].addEventListener("click", handleClick);
+                // cells[i].addEventListener("click", handleClick);
                 cells[i].innerText = "";
             }
         }
 
         function removeCellEventListener() {
             console.log("removeCellEventListener");
-            console.log(cells.length);
-            for (let i = 0; i < cells.length; i++) {
-                cells[i].removeEventListener("click", handleClick);
-            }
+            // console.log(cells.length);
+            cells[0].removeEventListener("click", handleClick);
+            // for (let i = 0; i < cells.length; i++) {
+            //     cells[i].removeEventListener("click", handleClick);
+            // }
         }
 
         function handleClick(event) {
@@ -253,7 +255,7 @@
         }
 
         function setCellVisited(position, i) {
-            console.log("setCellVisited");
+            // console.log("setCellVisited");
             let rows = document.getElementsByClassName("row"),
                 cell = rows[position[1]].children[position[0]];
             cell.innerText = i;
