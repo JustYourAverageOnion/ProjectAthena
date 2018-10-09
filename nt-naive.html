@@ -234,12 +234,14 @@
             knight.classList.add("show");
             help.classList.remove("show");
             let position = getClickPosition(this);
-            console.log("handleClick");
-            console.log(position);
+            //console.log("handleClick");
+            //console.log(position);
             board[position[1]][position[0]] = 1;
             setCellVisited(position, 1);
             moveKnightTo(...position);
-
+            let sequence = startTour(board, position);
+            //console.log(sequence);
+            showTour(sequence);
         }
 
         function getClickPosition(cell) {
@@ -256,11 +258,42 @@
                 cell = rows[position[1]].children[position[0]];
             cell.innerText = i;
         }
+        
+        // Traverse the chess board
+        function showTour(sequence) {
+           let i = 0;  
+         
+           let timerId = setInterval(() => {
+             moveKnightTo(...sequence[i]);
+             setCellVisited(sequence[i], i + 2);
+         
+             if (++i === sequence.length) {
+               clearInterval(timerId);
+               knight.classList.remove('show');
+               reset.classList.add('show');
+             }
+           }, 50);
+         }
 
         // Knight
         function moveKnightTo(x, y) {
             knight.style.left = `${x * 70}px`;
             knight.style.top = `${y * 70}px`;
+        }
+        // Get sequence based on position
+        function startTour(board, knight) {
+        let sequence = [ 
+            [2, 1],[4, 0],[6, 1],[7, 3],[6, 5],[7, 7],[5, 6],
+            [7, 5],[6, 7],[4, 6],[2, 7],[0, 6],[1, 4],[0, 2],[1, 0],
+            [3, 1],[5, 0],[7, 1],[6, 3],[4, 2],[3, 0],[1, 1],[0, 3],
+            [2, 2],[0, 1],[2, 0],[1, 2],[0, 4],[2, 3],[1, 5],[0, 7],
+            [2, 6],[3, 4],[1, 3],[0, 5],[1, 7],[2, 5],[3, 7],[1, 6],
+            [3, 5],[4, 7],[6, 6],[5, 4],[3, 3],[4, 1],[6, 0],[5, 2],
+            [4, 4],[3, 2],[5, 1],[7, 0],[6, 2],[7, 4],[5, 3],[7, 2],
+            [6, 4],[7, 6],[5, 7],[4, 5],[2, 4],[4, 3],[5, 5],[3, 6] 
+        ]
+        return sequence;
+
         }
     </script>
 </body>
