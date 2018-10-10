@@ -1,7 +1,7 @@
 # ProjectAthena
 A compilation of simple chess algorithms :)
 
-## Algorithmic solutions for different chess problems
+## Algorithmic solutions for different chess problems [link](https://www.geeksforgeeks.org/tag/chessboard-problems/)
 - **Knight's Tour Problem** [link](https://en.wikipedia.org/wiki/Knight's_tour)
     > A knight is placed on the first block of an empty board and, moving according to the rules of chess, must visit each square exactly once.
     - **Some of the algorithms tried here are as mentioned below**
