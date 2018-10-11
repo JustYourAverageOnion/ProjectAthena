@@ -6,7 +6,8 @@ A compilation of simple chess algorithms :)
     > A knight is placed on the first block of an empty board and, moving according to the rules of chess, must visit each square exactly once.
     - **Some of the algorithms tried here are as mentioned below**
         - [x] *Naive Algorithm* [link](https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/)
-            - The Naive Algorithm is to generate all tours one by one and check if the generated tour satisfies the constraints.
+            - For every possible position og the knight on the chess board, the sequence for the tour is pre fed to the program.
+            - Based on the user input the corresponding tour is chosen and traversed.
             - To view : [link](https://justyouraverageonion.github.io/ProjectAthena/nt-naive.html)
         - [ ] *Backtracking Algorithm* [link](https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/)
             - Add one of the next moves to solution vector and recursively check if this move leads to a solution.
@@ -38,8 +39,10 @@ A compilation of simple chess algorithms :)
 - **N Knights Problem** [link](https://www.codechef.com/problems/KNIGHTS)
     > To find out how many knights can be placed on a chess board such that no two knights attack each other **given some of the cells are blocked by non attacking pawns**. Since placing knights simply on the board is a little too easy to have algorithms -.- [link](https://en.wikibooks.org/wiki/Chess/Puzzles/Placement/32_Knights/Solution).
     - **Some of the algorithms tried here are as mentioned below**
-        - [x] *Naive Algorithm*
-            - Generate all possible configurations of knights on board and print a configuration that has the highest no of knights.
+        - [x] *Odd/Even Position Algorithm*
+            - Find the sum of the positions where the pawns are placed and count the no of pawns placed on the light and dark square.
+                - If more light square pawns are present then print knights on every alternate dark square except for those squares with pawns.
+                - Else print knights on every alternate light square except for those squares with pawns.
             - To view : [link](https://justyouraverageonion.github.io/ProjectAthena/nn-naive.html)
 - **Queens and Knights Problem** [link](http://vector.org.uk/art10003900)
     > To be able to place an equal number of knights and queens on a chessboard such that no piece attacks any other piece. 
