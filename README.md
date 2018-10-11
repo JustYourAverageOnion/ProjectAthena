@@ -5,7 +5,7 @@ A compilation of simple chess algorithms :)
 - **Knight's Tour Problem** [link](https://en.wikipedia.org/wiki/Knight's_tour)
     > A knight is placed on the first block of an empty board and, moving according to the rules of chess, must visit each square exactly once.
     - **Some of the algorithms tried here are as mentioned below**
-        - [ ] *Naive Algorithm* - [link](https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/)
+        - [x] *Naive Algorithm* [link](https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/)
             - The Naive Algorithm is to generate all tours one by one and check if the generated tour satisfies the constraints.
             - To view : [link](https://justyouraverageonion.github.io/ProjectAthena/nt-naive.html)
         - [ ] *Backtracking Algorithm* [link](https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/)
