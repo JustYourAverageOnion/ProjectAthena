@@ -38,7 +38,7 @@ A compilation of simple chess algorithms :)
 - **N Knights Problem** [link](https://www.codechef.com/problems/KNIGHTS)
     > To find out how many knights can be placed on a chess board such that no two knights attack each other **given some of the cells are blocked by non attacking pawns**. Since placing knights simply on the board is a little too easy to have algorithms -.- [link](https://en.wikibooks.org/wiki/Chess/Puzzles/Placement/32_Knights/Solution).
     - **Some of the algorithms tried here are as mentioned below**
-        - [ ] *Naive Algorithm*
+        - [x] *Naive Algorithm*
             - Generate all possible configurations of knights on board and print a configuration that has the highest no of knights.
             - To view : [link](https://justyouraverageonion.github.io/ProjectAthena/nn-naive.html)
 - **Queens and Knights Problem** [link](http://vector.org.uk/art10003900)
