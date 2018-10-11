@@ -49,6 +49,6 @@ A compilation of simple chess algorithms :)
             - To view : [link](https://justyouraverageonion.github.io/ProjectAthena/qn-naive.html)
 
 ## Assets
-- Chess Icons - [link](https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces)
+- Chess emoji - [link](https://emojipedia.org/search/?q=chess)
 - Problem statement - Have linked where it was appropriate
 - Algorithms - Same here :)
