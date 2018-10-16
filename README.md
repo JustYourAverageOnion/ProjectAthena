@@ -36,6 +36,8 @@ A compilation of simple chess algorithms :)
                 - If the queens clash then move to the next row
                 - If moving the current queen is not feasible the move the previous queen and repeat the process.
             - To view : [link](https://justyouraverageonion.github.io/ProjectAthena/nq-bactrack.html)
+        - [ ] New constraint [link](https://www.sciencealert.com/if-you-like-chess-and-free-money-we-have-some-really-really-good-news)
+            - Have to think about it :)
 - **N Knights Problem** [link](https://www.codechef.com/problems/KNIGHTS)
     > To find out how many knights can be placed on a chess board such that no two knights attack each other **given some of the cells are blocked by non attacking pawns**. Since placing knights simply on the board is a little too easy to have algorithms -.- [link](https://en.wikibooks.org/wiki/Chess/Puzzles/Placement/32_Knights/Solution).
     - **Some of the algorithms tried here are as mentioned below**
